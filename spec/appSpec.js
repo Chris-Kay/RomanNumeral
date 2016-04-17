@@ -27,6 +27,14 @@ define(function(require) {
         it('6 into VI', function() {
             expect(app.convert(6)).toEqual('VI');
         });
+
+        it('7 into VII', function() {
+            expect(app.convert(7)).toEqual('VII');
+        });
+
+        it('8 into VIII', function() {
+            expect(app.convert(8)).toEqual('VIII');
+        });
     });
 
 });
