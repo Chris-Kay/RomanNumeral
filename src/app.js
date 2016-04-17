@@ -24,16 +24,20 @@ define(function(require) {
 
     function convertOver3(number, letter) {
         var tempString = '';
-        if (number % 5 === 0) {
-            tempString = letter;
-        } else if (number % 5 < 4) {
-            if(number < 10) {
-                tempString = letter + convertUnder3(number - 5);
-            } else {
-                tempString = letter + convertUnder3(number - 10);
-            }
+        if(number > 10) {
+            tempString = 'X' + convert(number - 10);
         } else {
-            tempString = 'I' + letter;
+            if (number % 5 === 0 && number < 11){
+                tempString = letter;
+            } else if (number % 5 < 4) {
+                if(number < 10) {
+                    tempString = letter + convertUnder3(number - 5);
+                } else {
+                    tempString = letter + convertUnder3(number - 10);
+                }
+            } else {
+                tempString = 'I' + letter;
+            }
         }
 
         return tempString

@@ -55,6 +55,16 @@ define(function(require) {
         it('13 into XIII', function() {
             expect(app.convert(13)).toEqual('XIII');
         });
+
+        it('14 into XVI', function() {
+            expect(app.convert(14)).toEqual('XIV');
+        });
+
+        it('15 into XV', function() {
+            expect(app.convert(15)).toEqual('XV');
+        });
+
+
     });
 
 });
