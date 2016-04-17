@@ -1,9 +1,12 @@
 define(function(require) {
 
     function convert(number) {
-        if(number === 1) {
-            return 'I'
-        };
+        var returnedString = '';
+        for(var i = 0; i < number; i++) {
+            returnedString = returnedString + 'I';
+        }
+        
+        return returnedString;
     }
 
     return {

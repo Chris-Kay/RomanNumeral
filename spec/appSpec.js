@@ -7,6 +7,12 @@ define(function(require) {
         it('1 to I', function() {
             expect(app.convert(1)).toEqual('I');
         });
+
+        it('2 to II', function() {
+            expect(app.convert(2)).toEqual('II');
+        });
+
+
     });
 
 });
