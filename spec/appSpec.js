@@ -64,6 +64,40 @@ define(function(require) {
             expect(app.convert(15)).toEqual('XV');
         });
 
+        it('16 into XVI', function() {
+            expect(app.convert(16)).toEqual('XVI');
+        });
+
+        it('17 into XVI', function() {
+            expect(app.convert(17)).toEqual('XVII');
+        });
+
+        it('18 into XVII', function() {
+            expect(app.convert(18)).toEqual('XVIII');
+        });
+
+        it('19 into XVI', function() {
+            expect(app.convert(19)).toEqual('XIX');
+        });
+
+        it('20 into XX', function() {
+            expect(app.convert(20)).toEqual('XX');
+        });
+
+        it('25 into XXV', function() {
+            expect(app.convert(25)).toEqual('XXV');
+        });
+
+        it('30 into XXX', function() {
+            expect(app.convert(30)).toEqual('XXX');
+        });
+
+
+
+
+
+
+
 
     });
 
