@@ -23,6 +23,10 @@ define(function(require) {
         it('5 into V', function() {
             expect(app.convert(5)).toEqual('V');
         });
+
+        it('6 into VI', function() {
+            expect(app.convert(6)).toEqual('VI');
+        });
     });
 
 });

@@ -13,9 +13,11 @@ define(function(require) {
             convertUnder3();
         } else {
             if(number % 5 === 0) {
-                returnedString = returnedString + 'V';
+                returnedString = 'V';
+            } else if(number % 5 === 1) {
+                returnedString =  'VI';
             } else {
-                returnedString = returnedString + 'IV';
+                returnedString = 'IV';
             }
         }
 
