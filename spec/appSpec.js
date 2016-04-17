@@ -13,10 +13,12 @@ define(function(require) {
         });
 
         it('3 to III', function() {
-            expect(app.convert(2)).toEqual('II');
+            expect(app.convert(3)).toEqual('III');
         });
 
-
+        it('4 into IV', function() {
+            expect(app.convert(4)).toEqual('IV');
+        });
     });
 
 });

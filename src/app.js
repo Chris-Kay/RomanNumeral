@@ -2,10 +2,14 @@ define(function(require) {
 
     function convert(number) {
         var returnedString = '';
-        for(var i = 0; i < number; i++) {
-            returnedString = returnedString + 'I';
+        if(number < 4) {
+            for (var i = 0; i < number; i++) {
+                returnedString = returnedString + 'I';
+            }
+        } else {
+            return 'IV';
         }
-        
+
         return returnedString;
     }
 
