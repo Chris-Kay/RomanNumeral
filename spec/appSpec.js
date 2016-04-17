@@ -12,6 +12,10 @@ define(function(require) {
             expect(app.convert(2)).toEqual('II');
         });
 
+        it('3 to III', function() {
+            expect(app.convert(2)).toEqual('II');
+        });
+
 
     });
 
