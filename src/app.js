@@ -27,7 +27,11 @@ define(function(require) {
         if (number % 5 === 0) {
             tempString = letter;
         } else if (number % 5 < 4) {
-            tempString = letter + convertUnder3(number - 5);
+            if(number < 10) {
+                tempString = letter + convertUnder3(number - 5);
+            } else {
+                tempString = letter + convertUnder3(number - 10);
+            }
         } else {
             tempString = 'I' + letter;
         }

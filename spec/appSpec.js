@@ -44,6 +44,17 @@ define(function(require) {
             expect(app.convert(10)).toEqual('X');
         });
 
+        it('11 into XI', function() {
+            expect(app.convert(11)).toEqual('XI');
+        });
+
+        it('12 into XII', function() {
+            expect(app.convert(12)).toEqual('XII');
+        });
+
+        it('13 into XIII', function() {
+            expect(app.convert(13)).toEqual('XIII');
+        });
     });
 
 });
