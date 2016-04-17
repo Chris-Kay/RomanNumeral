@@ -19,6 +19,10 @@ define(function(require) {
         it('4 into IV', function() {
             expect(app.convert(4)).toEqual('IV');
         });
+
+        it('5 into V', function() {
+            expect(app.convert(5)).toEqual('V');
+        });
     });
 
 });
