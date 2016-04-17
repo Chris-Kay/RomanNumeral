@@ -35,6 +35,15 @@ define(function(require) {
         it('8 into VIII', function() {
             expect(app.convert(8)).toEqual('VIII');
         });
+
+        it('9 into IX', function() {
+            expect(app.convert(9)).toEqual('IX');
+        });
+
+        it('10 into X', function() {
+            expect(app.convert(10)).toEqual('X');
+        });
+
     });
 
 });

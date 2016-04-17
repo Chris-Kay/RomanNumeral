@@ -5,14 +5,10 @@ define(function(require) {
 
         if(number < 4) {
             returnedString = convertUnder3(number);
+        } else if(number < 9) {
+            returnedString = convertOver3(number, 'V');
         } else {
-            if(number % 5 === 0) {
-                returnedString = 'V';
-            } else if(number % 5 < 4) {
-                returnedString = 'V' + convertUnder3(number - 5);
-            } else {
-                returnedString = 'IV';
-            }
+            returnedString = convertOver3(number, 'X');
         }
 
         return returnedString;
@@ -24,6 +20,19 @@ define(function(require) {
             tempString = tempString + 'I';
         }
         return tempString;
+    }
+
+    function convertOver3(number, letter) {
+        var tempString = '';
+        if (number % 5 === 0) {
+            tempString = letter;
+        } else if (number % 5 < 4) {
+            tempString = letter + convertUnder3(number - 5);
+        } else {
+            tempString = 'I' + letter;
+        }
+
+        return tempString
     }
 
     return {
