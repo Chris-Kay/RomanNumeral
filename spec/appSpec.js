@@ -100,6 +100,29 @@ define(function(require) {
             expect(app.convert(45)).toEqual('XLV');
         });
 
+        it('50 into L', function () {
+            expect(app.convert(50)).toEqual('L');
+        });
+
+        it('60 into LX', function () {
+            expect(app.convert(60)).toEqual('LX');
+        });
+
+        it('70 into LXX', function () {
+            expect(app.convert(70)).toEqual('LXX');
+        });
+
+        it('89 into LXXXIX', function () {
+            expect(app.convert(89)).toEqual('LXXXIX');
+        });
+
+        it('90 into XC', function () {
+            expect(app.convert(90)).toEqual('XC');
+        });
+
+        it('100 into C', function () {
+            expect(app.convert(100)).toEqual('C');
+        });
 
 
 
