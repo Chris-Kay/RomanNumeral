@@ -92,13 +92,9 @@ define(function(require) {
             expect(app.convert(30)).toEqual('XXX');
         });
 
-
-
-
-
-
-
-
+        it('40 into XL', function () {
+            expect(app.convert(40)).toEqual('XL');
+        })
     });
 
 });

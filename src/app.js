@@ -7,8 +7,10 @@ define(function(require) {
             returnedString = convertUnder3(number);
         } else if(number < 9) {
             returnedString = convertOver3(number, 'V');
-        } else {
+        } else if (number < 40) {
             returnedString = convertOver3(number, 'X');
+        } else {
+            returnedString = convertOver3(number, 'L');
         }
 
         return returnedString;
@@ -24,8 +26,11 @@ define(function(require) {
 
     function convertOver3(number, letter) {
         var tempString = '';
+        if(number === 40) {
+            return tempString = 'XL'
+        }
         if(number > 10) {
-            tempString = 'X' + convert(number - 10);
+            tempString = letter + convert(number - 10);
         } else {
             if (number % 5 === 0 && number < 11){
                 tempString = letter;
