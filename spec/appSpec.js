@@ -94,7 +94,15 @@ define(function(require) {
 
         it('40 into XL', function () {
             expect(app.convert(40)).toEqual('XL');
-        })
+        });
+
+        it('45 into XLV', function () {
+            expect(app.convert(45)).toEqual('XLV');
+        });
+
+
+
+
     });
 
 });
